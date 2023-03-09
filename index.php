@@ -40,7 +40,7 @@ if(isset($_POST['enter'])){
 <title>LiveChat</title>
 <link type="text/css" rel="stylesheet" href="style.css" />
 </head>
-<h1 style="text-align:center; font: 50px Broadway;">LiveChat™</h1>
+<h1 style="text-align:center; font: 50px Broadway;">LiveChat</h1>
 <?php
 if(!isset($_SESSION['name'])){
 	loginForm();
@@ -95,7 +95,7 @@ $(document).ready(function(){
 		  	},
 		});
 	}
-	setInterval (loadLog, 500);	//Reload file every 0.5 seconds
+	setInterval (loadLog, 50);	//Reload file every 0.05 seconds
 	
 	//If user wants to end session
 	$("#exit").click(function(){
