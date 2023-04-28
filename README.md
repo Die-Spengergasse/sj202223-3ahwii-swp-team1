@@ -2,7 +2,7 @@
 
 ## Einführung
 
-Dieses LiveChat Projekt wurde von Emil Haselböck, Joe Koch-Daubrawa, Theodor Schneider und Ben Daschner entwickelt. Es handelt sich um eine einfache Web-basierte Chat-Anwendung, die es Benutzern ermöglicht, in Echtzeit miteinander zu kommunizieren. Die Anwendung besitzt einem Chat-Raum, in dem Benutzer Nachrichten senden und empfangen können.
+Das LiveChat Projekt wurde von Emil Haselböck, Joe Koch-Daubrawa, Theodor Schneider und Ben Daschner entwickelt. Es handelt sich um eine einfache Web-basierte Chat-Anwendung, die es Benutzern ermöglicht, in Echtzeit miteinander zu kommunizieren. Die Anwendung besitzt einem Chat-Raum, in dem Benutzer Nachrichten senden und empfangen können.
 
 
 
