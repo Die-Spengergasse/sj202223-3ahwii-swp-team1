@@ -24,6 +24,7 @@ Das LiveChat Projekt wurde von Emil Haselböck, Joe Koch-Daubrawa, Theodor Schne
 
 - Die Dateien `index.php`, `post.php` und `styles.css` sowie `log.html` müssen in das Verzeichnis eines PHP-fähigen Webservers geladen werden.
 - Die Datei `log.html` muss beschreibbar sein (`chmod +w log.html`)
+- die Anweisung in LiveChat.sql auf einem MariaDB oder MySQL server absetzen um die Tabelle für die Benutzer zu erstellen
 
 
 
