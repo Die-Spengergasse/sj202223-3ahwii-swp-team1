@@ -7,7 +7,7 @@ Das LiveChat Projekt wurde von Emil Haselböck, Joe Koch-Daubrawa, Theodor Schne
 
 
 
-## Features
+# Features
 
 - Einfache Anmeldung mit Benutzernamen
 - Live-Nachrichtenübertragung zwischen Benutzern
@@ -15,7 +15,7 @@ Das LiveChat Projekt wurde von Emil Haselböck, Joe Koch-Daubrawa, Theodor Schne
 - Automatisches Scrollen zum Anzeigen neuer Nachrichten
 - Speicherung des Chat-Verlaufs in einer Log-Datei
 
-## Technologien
+# Technologien
 
 - PHP für serverseitige Skripterstellung
 - HTML und CSS zur Strukturierung und Gestaltung der Benutzeroberfläche
