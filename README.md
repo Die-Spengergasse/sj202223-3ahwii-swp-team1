@@ -8,9 +8,9 @@ Das LiveChat Projekt wurde von Emil Haselböck, Joe Koch-Daubrawa, Theodor Schne
 
 ## Features
 
-- Einfache Anmeldung mit Benutzernamen
+- Einfache Anmeldung mit Benutzernamen und Kennwort
 - Live-Nachrichtenübertragung zwischen Benutzern
-- Anzeige von Eintritts- und Austrittsmeldungen im Chat
+- Anzeige von Austrittsmeldungen im Chat
 - Automatisches Scrollen zum Anzeigen neuer Nachrichten
 - Speicherung des Chat-Verlaufs in einer Log-Datei
 
@@ -24,6 +24,8 @@ Das LiveChat Projekt wurde von Emil Haselböck, Joe Koch-Daubrawa, Theodor Schne
 
 - Die Dateien `index.php`, `post.php` und `styles.css` sowie `log.html` müssen in das Verzeichnis eines PHP-fähigen Webservers geladen werden.
 - Die Datei `log.html` muss beschreibbar sein (`chmod +w log.html`)
+- Es Muss ein MySQL oder MariaDB Server verfügbar sein, welcher mit der website kommunizieren kann 
+- `LiveChat.sql`muss auf den Datenbankserver geladen werden
 
 
 
