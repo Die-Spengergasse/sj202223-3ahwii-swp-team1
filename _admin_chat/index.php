@@ -55,12 +55,13 @@ if (isset($_POST['enter'])) {
 <head>
 <title>LiveChat</title><!-- Hier wird die Haupt-Seite Erstellt, auf welcher der Benutzer dann mit dem Chat interagiert -->
 <link type="text/css" rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
 </head>
 <body>
-<h1 style="text-align:center; font: 50px Broadway;">LiveChat</h1>
+
 <h1 style="text-align:center; font: 50px Broadway; margin-top:0px; margin-bottom: 0px;">LiveChat</h1>
-<p style="text-align:center; font Broadway; margin-top:0px;">Ein Projekt von Joe Koch-Daubrawa, Theodor Schneider, Emil Haselböck und Ben Daschner</p>
-<h3 style="text-align:center; font Broadway; margin-top:0px;">Willkommen im general Chatroom</h3>
+<p style="text-align:center; font: Broadway; margin-top:0px;">Ein Projekt von Joe Koch-Daubrawa, Theodor Schneider, Emil Haselböck und Ben Daschner</p>
+<h3 style="text-align:center; font: Broadway; margin-top:0px;">Willkommen im general Chatroom</h3>
 <a href="https://www.bendaschner.com/LiveChat/general"><h5 style= "color: #00FF00;">General Chatroom</h5></a><a href="https://www.bendaschner.com/LiveChat/Deutsch"><h5 style= "color: #00FF00;">Deutsch Chatroom</h5></a><a href="https://www.bendaschner.com/LiveChat/Mathe"><h5 style= "color: #00FF00;">Mathematik Chatroom</h5></a>
 <?php
 if(!isset($_SESSION['name'])){ //wenn der Benutzer nicht angemeldet ist wird er zur loginform geschickt
@@ -75,7 +76,7 @@ else{
 ?>
 <div id="wrapper">
 	<div id="menu">
-		<p class="welcome">Welcome, <b><?php echo $_SESSION['name']; ?></b></p> <!-- Hier wird der Benutzername im linken oberen Eck der Chatbox angezeigt in der Form "Willkommen, Benutzername -->"
+        <p class="welcome">Welcome, <b><?php echo $_SESSION['name']; ?></b></p> <!-- Hier wird der Benutzername im linken oberen Eck der Chatbox angezeigt in der Form "Willkommen, Benutzername -->
 		<p class="logout"><a id="exit" href="#">Exit Chat</a></p> <!-- hier ist der Text Exit Chat, welcher gleichzeitig als Logout Button funktioniert -->
 		<div style="clear:both"></div>
 	</div>	

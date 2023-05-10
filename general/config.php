@@ -1,17 +1,18 @@
 <?php
-// Datenbank-Verbindungsinformationen
-$db_host = 'datnebankserver';
-$db_name = 'Datenbankname';
-$db_user = 'username';
-$db_pass = 'passwort';
+// Datenbankverbindungsparameter
+$servername = 'Datenbankserver';
+$username = 'Benutzername';
+$password = 'Benutzerpasswort';
+$dbname =  'Datenbankname ';
 
-// Versuchen, eine Verbindung zur Datenbank herzustellen
-try {
-    $db = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);
-    // Fehlermodus auf Exceptions setzen
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    // Verbindungsfehlermeldung ausgeben
-    echo "Verbindung fehlgeschlagen: " . $e->getMessage();
+// Erstellen einer Verbindung zur Datenbank
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Überprüfung der Verbindung
+if ($conn->connect_error) {
+    die("Verbindung fehlgeschlagen: " . $conn->connect_error);
 }
+
+// Setzen des Zeichensatzes für die Verbindung auf utf8
+$conn->set_charset("utf8");
 ?>
