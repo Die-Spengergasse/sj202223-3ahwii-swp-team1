@@ -58,7 +58,7 @@ if (isset($_POST['enter'])) {
 <meta charset="UTF-8">
 </head>
 <body>
-<h1 style="text-align:center; font: 50px Broadway;">LiveChat</h1>
+
 <h1 style="text-align:center; font: 50px Broadway; margin-top:0px; margin-bottom: 0px;">LiveChat</h1>
 <p style="text-align:center; font: Broadway; margin-top:0px;">Ein Projekt von Joe Koch-Daubrawa, Theodor Schneider, Emil Haselböck und Ben Daschner</p>
 <h3 style="text-align:center; font: Broadway; margin-top:0px;">Willkommen im general Chatroom</h3>
