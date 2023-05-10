@@ -15,8 +15,9 @@ body {
 
 .title {
   color: #00FF00;
-  font-size: 3rem;
+  /*font-size: 3rem;*/
   margin-bottom: 20px;
+  font: 100px Broadway; 
 }
 
 .chat-links {
@@ -26,7 +27,7 @@ body {
   gap: 10px;
 }
 
-.chat-link {
+.chat-link, .subheading{
   color: #00FF00;
   font-size: 1.5rem;
   text-decoration: none;
