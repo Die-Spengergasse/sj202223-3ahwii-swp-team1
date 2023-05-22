@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Bad words list
+// Schimpfwörter die Gefiltert werden sollen
 $bad_words = array(
     "damn", 
     "hell", 
@@ -33,10 +33,11 @@ if (isset($_SESSION['name'])) {
     // Holt die Nachricht aus der POST Funktion von index.php
     $text = $_POST['text'];
 
-    // Replace bad words
+    // Hier werden die Schimpfwörter
     foreach ($bad_words as $word) {
         if (strpos($text, $word) !== false) {
-            $text = str_ireplace($word, '[Zensiert]', $text);
+            $stars = str_repeat('*', strlen($word));
+            $text = str_ireplace($word, $stars, $text);
         }
     }
 
