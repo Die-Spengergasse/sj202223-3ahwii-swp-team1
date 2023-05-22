@@ -61,7 +61,7 @@ if (isset($_POST['enter'])) {
 
 <h1 style="text-align:center; font: 50px Broadway; margin-top:0px; margin-bottom: 0px;">LiveChat</h1>
 <p style="text-align:center; font: Broadway; margin-top:0px;">Ein Projekt von Joe Koch-Daubrawa, Theodor Schneider, Emil Haselböck und Ben Daschner</p>
-<h3 style="text-align:center; font: Broadway; margin-top:0px;">Willkommen im general Chatroom</h3>
+<h3 style="text-align:center; font: Broadway; margin-top:0px;">Willkommen im administrator Chatroom</h3>
 <a href="https://www.bendaschner.com/LiveChat/general"><h5 style= "color: #00FF00;">General Chatroom</h5></a><a href="https://www.bendaschner.com/LiveChat/Deutsch"><h5 style= "color: #00FF00;">Deutsch Chatroom</h5></a><a href="https://www.bendaschner.com/LiveChat/Mathe"><h5 style= "color: #00FF00;">Mathematik Chatroom</h5></a>
 <?php
 if(!isset($_SESSION['name'])){ //wenn der Benutzer nicht angemeldet ist wird er zur loginform geschickt
