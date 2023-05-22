@@ -1,5 +1,86 @@
 /* CSS Document */
 
+/*
+Erklärung der CSS-Elemente:
+
+1. margin: Der äußere Abstand eines Elements. Bestimmt den Abstand zwischen dem Rand des Elements und den umgebenden Elementen.
+
+2. padding: Der innere Abstand eines Elements. Bestimmt den Abstand zwischen dem Inhalt des Elements und seinem Rand.
+
+3. color: Die Textfarbe eines Elements.
+
+4. text-align: Die horizontale Ausrichtung von Text innerhalb eines Elements. Mögliche Werte sind left (links), center (zentriert), right (rechts) und justify (Blocksatz).
+
+5. font: Eine kombinierte Eigenschaft, um Schriftart, Schriftgröße und Schriftstil eines Elements zu definieren. 
+
+6. background-color: Die Hintergrundfarbe eines Elements.
+
+7. border: Eine kombinierte Eigenschaft, um den Rand eines Elements zu definieren. Bestimmt die Breite, den Stil und die Farbe des Rands.
+
+8. width: Die Breite eines Elements.
+
+9. height: Die Höhe eines Elements.
+
+10. text-decoration: Die Dekoration von Text innerhalb eines Elements, wie z.B. unterstrichen, durchgestrichen oder mit einer Linie über dem Text.
+
+11. float: Legt fest, wie ein Element neben anderen Elementen angeordnet wird. Mögliche Werte sind left (links), right (rechts) und none (keine).
+
+12. min-width: Die minimale Breite eines Elements.
+
+13. min-height: Die minimale Höhe eines Elements.
+
+14. overflow: Legt fest, wie der Inhalt eines Elements angezeigt wird, wenn er größer ist als das Element selbst. Mögliche Werte sind visible (sichtbar), hidden (verborgen), scroll (Scrollbalken) und auto (automatisch).
+
+15. background: Eine kombinierte Eigenschaft, um den Hintergrund eines Elements zu definieren. Bestimmt Farbe, Bild, Position, Wiederholung und Größe des Hintergrunds.
+
+Erklärung der Farben im CSS-Code:
+
+1. #00FF00: Eine leuchtend grüne Farbe, die in den Textelementen, den Rändern und Eingabefeldern des Chats verwendet wird. Die Farbe wird durch die Kombination der maximalen Intensität von Grün (FF) und der minimalen Intensität von Rot (00) und Blau (00) erzeugt.
+
+2. #000000: Eine schwarze Farbe, die als Hintergrundfarbe für den gesamten Chat-Bereich und die Chat-Nachrichten verwendet wird. Die Farbe entsteht durch die Kombination der minimalen Intensität von Rot (00), Grün (00) und Blau (00).
+
+3. #ff0000: Eine leuchtend rote Farbe, die für Fehlermeldungen im Chat verwendet wird, z. B. wenn der Name beim Anmelden leer ist. Die Farbe wird durch die Kombination der maximalen Intensität von Rot (FF) und der minimalen Intensität von Grün (00) und Blau (00) erzeugt.
+*/
+
+
+
+/* Generelle Style angaben, die auf die gesamte Website gelten, wenn nicht in diesem Dokument anders spezifiziert */
+body {
+	font: 12px arial;
+	color: #00FF00; /*Textfarbe ist standardmäßig Grün*/
+	text-align: center;/*Text wird immer zentriert*/
+	padding: 35px;
+	background-color: #000000;/* Hintergrundfarbe wird auf Schwarz gesetzt*/
+}
+
+/* setzt für Texte die Abstände auf 0 Pixel, damit sie schön untereinander erscheinen können ohne einen großen Abstand */
+form, p, span {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Hier werden Texte, die in Input Feldern eingegeben werden grün gefärbt und der Hintergrund dieser felder Schwarz gefärbt */
+input {
+	font: 12px arial;
+	border: 1px solid #00FF00;/*Grün*/
+	background-color: #000000;/*Schwarz*/
+	color: #00FF00;/*Grün*/
+}
+
+/* Hier wird der Logout Button auch explizit Grün gefärbt */
+a {
+	color: #00FF00;/*Grün*/
+	text-decoration: none;
+}
+
+	/* Wenn man mit Der Maus über dem logout Text ist, dann wird dieser unterstrichen */
+	a:hover {
+		text-decoration: underline;
+	}
+
+/* Setzt die Größe und Farbe der Chatbox sowie der loginform fest */
+=======
+
 /* Stile für den gesamten Seiteninhalt */
 body {
 	font:12px arial;
@@ -35,11 +116,52 @@ a:hover {
 }
 
 /* Stile für den Hauptcontainer und das Login-Formular */
+
 #wrapper, #loginform {
-	margin:0 auto;
-	padding-bottom:25px;
-	background:#000000;
+	margin: 0 auto;
+	padding-bottom: 25px;
+	background: #000000;
 	min-width: 504px;
+
+	width: 70%;
+	border: 1px solid #000000;
+}
+
+/* zusätzliche Erweiterung der loginform */
+#loginform {
+	padding-top: 18px;
+}
+
+	/* Text in der Loginform wird hier auch extra erweitert */
+	#loginform p {
+		margin: 5px;
+	}
+
+/* Hier wird die Chatbox angeführt mit den verschiedensten Attributen */
+#chatbox {
+	text-align: left;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	padding: 10px;
+	background: #000000;
+	min-height: 270px;
+	min-width: 430px;
+	width: 70%;
+	height: 550px;
+	border: 1px solid #000000;
+	overflow: auto;
+}
+
+/* das Eingabefeld für die Chatnachrichten wird hier definiert */
+#usermsg {
+	width: 70%;
+	height: 15px;
+	border: 1px solid #00FF00;
+	background-color: 000000;
+}
+
+/* der Senden Knopf bekommt hier seine größe */
+
 	width: 50%;
 	height: 60%;
 	border:1px solid #000000;
@@ -79,14 +201,37 @@ a:hover {
 }
 
 /* Stile für den "Abschicken"-Button */
+
 #submit {
 	width: 60px;
 	height: 25px;
 }
 
-/* Stil für Fehlermeldungen */
+
+/* Fehlermeldungen werden hier auf ein ganz starkes Rot umgefärbt und werden so stark hervorgehoben */
+
 .error {
 	color: #ff0000;
+}
+
+/* Der Teil vom Chatprogramm wo die Willkommensnachricht und der logout Knopf zu finden sind wird hier definiert */
+#menu {
+	padding: 12.5px 25px 12.5px 25px;
+}
+
+/* Hier wird der Willkommenstext links angeordnet */
+.welcome {
+	float: left;
+}
+
+/* hier wird der Logout Text rechts angeordner */
+.logout {
+	float: right;
+}
+
+/* hier wird jede einzelne Chatnachricht formatiert */
+.msgln {
+	margin: 0 0 2px 0;
 }
 
 /* Stile für das Menü */
@@ -108,3 +253,4 @@ a:hover {
 .msgln {
 	margin:0 0 2px 0;
 }
+
