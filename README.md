@@ -4,7 +4,7 @@
 
 # Einführung
 
-Das LiveChat Projekt wurde von Emil Haselböck, Joe Koch-Daubrawa, Theodor Schneider und Ben Daschner entwickelt. Es handelt sich um eine einfache Web-basierte Chat-Anwendung, die es Benutzern ermöglicht, in Echtzeit miteinander zu kommunizieren. Die Anwendung besitzt einem Chat-Raum, in dem Benutzer Nachrichten senden und empfangen können.
+Das LiveChat Projekt wurde von Emil Haselböck, Joe Koch-Daubrawa, Theodor Schneider und Ben Daschner entwickelt. Es handelt sich um eine einfache Web-basierte Chat-Anwendung, die es Benutzern ermöglicht, in Echtzeit miteinander zu kommunizieren. Die Anwendung besitzt mehrere fachspezifische Chat-Räume, in dem Benutzer Nachrichten senden und empfangen können.
 
 
 
@@ -25,8 +25,8 @@ Das LiveChat Projekt wurde von Emil Haselböck, Joe Koch-Daubrawa, Theodor Schne
 # Setup
 
 - Die gesamte Ordnerstruktur muss auf einen PHP-Fähigen Webserver geladen werden
-- Die Dateien mit dem Namen `log.html`  in jedem der unterordner müssen beschreibbar sein 
-- die Anweisung in `LiveChat.sql` auf einem MariaDB oder MySQL server absetzen um die Tabelle für die Benutzer zu erstellen
+- Die Dateien mit dem Namen `log.html`  in jedem der Unterordner müssen beschreibbar sein 
+- die Anweisung in `LiveChat.sql` auf einem MariaDB oder MySQL Server absetzen um die Tabelle für die Benutzer zu erstellen
 
 
 

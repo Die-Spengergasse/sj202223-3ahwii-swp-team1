@@ -1,4 +1,5 @@
 /* CSS Document */
+
 /*
 Erklärung der CSS-Elemente:
 
@@ -78,11 +79,50 @@ a {
 	}
 
 /* Setzt die Größe und Farbe der Chatbox sowie der loginform fest */
+=======
+
+/* Stile für den gesamten Seiteninhalt */
+body {
+	font:12px arial;
+	color: #00FF00;
+	text-align:center;
+	padding:35px;
+	background-color:#000000;
+}
+
+/* Allgemeine Stile für Formulare, Absätze und Spans */
+form, p, span {
+	margin:0;
+	padding:0;
+}
+
+/* Stile für Eingabefelder */
+input {
+	font:12px arial;
+	border: 1px solid #00FF00;
+	background-color: #000000;
+	color: #00FF00;
+}
+
+/* Stile für Links */
+a {
+	color:#00FF00;
+	text-decoration:none;
+}
+
+/* Stile für Links beim Hovern (Maus darüber) */
+a:hover {
+	text-decoration:underline;
+}
+
+/* Stile für den Hauptcontainer und das Login-Formular */
+
 #wrapper, #loginform {
 	margin: 0 auto;
 	padding-bottom: 25px;
 	background: #000000;
 	min-width: 504px;
+
 	width: 70%;
 	border: 1px solid #000000;
 }
@@ -121,12 +161,55 @@ a {
 }
 
 /* der Senden Knopf bekommt hier seine größe */
+
+	width: 50%;
+	height: 60%;
+	border:1px solid #000000;
+}
+
+/* Zusätzliche Stile speziell für das Login-Formular */
+#loginform {
+	padding-top:18px;
+}
+
+#loginform p {
+	margin: 5px;
+}
+
+/* Stile für den Chatbereich */
+#chatbox {
+	text-align:left;
+	margin:0 auto;
+	margin-bottom:25px;
+	padding:10px;
+	background:#000000;
+	min-height:480px;
+	min-width:200px;
+	width: 70%;
+	height:50%;
+	max-height: 580px;
+	border:1px solid #000000;
+	overflow:auto;
+}
+
+/* Stile für die Benutzereingabe im Chat */
+#usermsg {
+	width:70%;
+	height:15px;
+	border:1px solid #00FF00;
+	background-color:000000;
+}
+
+/* Stile für den "Abschicken"-Button */
+
 #submit {
 	width: 60px;
 	height: 25px;
 }
 
+
 /* Fehlermeldungen werden hier auf ein ganz starkes Rot umgefärbt und werden so stark hervorgehoben */
+
 .error {
 	color: #ff0000;
 }
@@ -150,3 +233,24 @@ a {
 .msgln {
 	margin: 0 0 2px 0;
 }
+
+/* Stile für das Menü */
+#menu {
+	padding:12.5px 25px 12.5px 25px;
+}
+
+/* Stile für die Begrüßungsnachricht */
+.welcome {
+	float:left;
+}
+
+/* Stile für den Logout-Link */
+.logout {
+	float:right;
+}
+
+/* Stile für Nachrichten im Chatbereich */
+.msgln {
+	margin:0 0 2px 0;
+}
+
